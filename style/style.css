@@ -1,0 +1,91 @@
+body{
+    background-color: #666;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background: #212121;
+    width: 2480px;
+    height: 3508px;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+    background-image: linear-gradient(rgba(48, 48, 48, 0.2), rgba(33, 33, 33, 0.2)), url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?w=1060&t=st=1674743032~exp=1674743632~hmac=bd93a24d5e0ca0ca53b31f4a3a361770d0b939c6ca3a6aaa9d2753cb8f8298dc');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+}
+.first{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    box-shadow: 0px 0px 25px #000;
+    background:rgba(33, 33, 33, 0.7)
+}
+.summary{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    box-shadow: 0px 0px 25px #000;
+    background: rgba(48, 48, 48, 0.7);
+}
+.socials{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    box-shadow: 0px 0px 25px #000;
+    background:rgba(33, 33, 33, 0.7)
+}
+.hobby{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    box-shadow: 0px 0px 25px #000;
+    background:rgba(33, 33, 33, 0.7)
+}
+.exp{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    box-shadow: 0px 0px 25px #000;
+    background: rgba(48, 48, 48, 0.7);
+    /* margin: 1.5% 1.5% 0 0; */
+}
+.education{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    box-shadow: 0px 0px 25px #000;
+    background: rgba(48, 48, 48, 0.7);
+}
+.skills{
+    grid-column-start: 5;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    box-shadow: 0px 0px 25px #000;
+    background: rgba(48, 48, 48, 0.7);
+}
+
+/* TEXT */
+h1{
+    margin: 50px;
+    font-size: 100px;
+}
+
+h1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    background-color: #800000;
+    margin-left: -3px;
+  }
