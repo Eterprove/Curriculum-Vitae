@@ -10,17 +10,22 @@ body{
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: repeat(10, 10%);
-    background-image: linear-gradient(rgba(48, 48, 48, 0.2), rgba(33, 33, 33, 0.2)), url('https://img.freepik.com/free-vector/dark-hexagonal-background-with-gradient-color_79603-1410.jpg?w=1060&t=st=1674743032~exp=1674743632~hmac=bd93a24d5e0ca0ca53b31f4a3a361770d0b939c6ca3a6aaa9d2753cb8f8298dc');
+    background-image: linear-gradient(rgba(48, 48, 48, 0.2), rgba(33, 33, 33, 0.2)), url('https://scontent-prg1-1.xx.fbcdn.net/v/t1.15752-9/261184023_969617560652995_7383726190194114207_n.jpg?stp=dst-jpg_s2048x2048&_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=F69YQ8R88WMAX_zJQ_k&_nc_ht=scontent-prg1-1.xx&oh=03_AdR6cCl86DHmnWF2AE_eCCPW6asUBNLfM_ouZn5mlIyTXg&oe=63FA4104');
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-
+    
 }
 .first{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px;
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 5;
+    grid-row-end: 4;
     box-shadow: 0px 0px 25px #000;
     background:rgba(33, 33, 33, 0.7)
 }
@@ -35,18 +40,23 @@ body{
 .socials{
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 6;
     box-shadow: 0px 0px 25px #000;
     background:rgba(33, 33, 33, 0.7)
 }
 .hobby{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 8;
-    grid-row-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 10;
     box-shadow: 0px 0px 25px #000;
     background:rgba(33, 33, 33, 0.7)
+    
 }
 .exp{
     grid-column-start: 5;
@@ -66,6 +76,10 @@ body{
     background: rgba(48, 48, 48, 0.7);
 }
 .skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     grid-column-start: 5;
     grid-column-end: 11;
     grid-row-start: 7;
@@ -73,11 +87,25 @@ body{
     box-shadow: 0px 0px 25px #000;
     background: rgba(48, 48, 48, 0.7);
 }
+.law{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    box-shadow: 0px 0px 25px #000;
+    background: rgba(48, 48, 48, 0.7);
+    font-size: 25px;
+}
 
 /* TEXT */
 h1{
     margin: 50px;
-    font-size: 100px;
+    font-size: 50px;
+    width: 100%;
 }
 
 h1::after{
@@ -85,7 +113,100 @@ h1::after{
     display: block;
     position: absolute;
     width: 350px;
-    height: 5px;
+    height: 10px;
     background-color: #800000;
     margin-left: -3px;
+  }
+  h2{
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  h3{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    border-bottom: #800000 solid 10px;
+    padding: 20px;
+    margin: 0;
+  }
+  i{
+    font-size: 120px;
+    margin: 15px;
+  }
+  p{
+    font-size: 45px;
+    margin-left: 40px;
+  }
+
+  /* HOBBY */
+
+  #hobby{
+    width: 100%;
+    height: 330px;
+    text-align: center;
+    background-color: #800000;
+    margin: 15px;
+    position: relative;
+    box-shadow: 0 0 10px black;
+    font-size: 40px;
+    font-style: italic;
+    padding: 15px;
+  
+  }
+  #hobby::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100px 100px 0;
+    border-color: transparent rgba(48, 48, 48, 1) transparent transparent;
+    right: 0;
+    top: 0;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+  }
+
+  /* Zdjęcie */
+
+  img{
+    height: 60%;
+    border: #000 solid 20px;
+    border-radius: 1000px;
+
+  }
+
+  /* Lista */
+
+  ul{
+    list-style-type: none;
+    font-size: 40px;
+    line-height: 1.8;
+  }
+  li i{
+    font-size: 50px;
+  }
+  .skills li{
+    background-color: #800000;
+    padding: 20px;
+    font-size: 35px;
+    margin: 20px;
+    border-radius: 25px;
+  }
+  .skills ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .expo b{
+    font-size: 44px;
+  }
+  .expo i{
+    font-size: 40px;
+  }
+  .expo{
+    margin-left: 30px;
+    padding: 20px;
   }
